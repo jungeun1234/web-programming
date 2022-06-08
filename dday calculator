@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dday_calculator</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        function calculator(){
+        var s = new Date($("#start").val());
+        var e = new Date($("#end").val());
+        var interval = s.getTime() - e.getTime();
+        interval = Math.floor(interval / (1000 * 60 * 60 * 24));
+        if (interval < 0)
+            $("#output").text(("D " + interval));
+        else
+        $("#output").text(("D + " + interval));
+    }
+    </script>
+    <style>
+        h2{
+            background-color: green;
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <form>
+    Start Date <input type="date" id="start"><br>
+    End Date <input type="date" id="end"><br>
+    <input type="button" onclick="calculator();" value="calculate" style="background-color: green; color:white;"><br><br>
+    <h2>Result</h2><p></p>
+    There are <b><span id="output"></span></b><br>
+    </form>
+</body>
+</html>
