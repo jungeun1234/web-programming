@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이정은</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        h1{
+            text-align: center;
+            font-size:80px;
+            background: url(https://i.gifer.com/3M3T.gif);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        #aboutme{
+            background-color: rgba(255, 255, 255, 0.541);
+            width:200px;
+            height:300px;
+            float:left;
+            text-align: center;
+            margin-left: 5%;
+        }
+        #section{
+            background-color: rgba(122, 122, 122, 0.541);
+            width:1500px;
+            height:300px;
+            text-align:center;
+            float:left;
+        }
+        .logo{
+        width: auto;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        }
+    .logo:hover {opacity: 0.8;}
+
+  .zoom {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .zoom_content {
+    margin: auto;
+    display: block;
+    width: 50%; height: auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    animation-name: zoom;
+    animation-duration: 0.8s;
+  }
+
+  @keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .footer {
+    position: scroll;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    color:white;
+    text-align: center;
+  }
+  * {margin: 0; padding: 0; font-family: 'lato'; }
+li {list-style: none;}
+a {text-decoration: none;}
+
+
+#nav {position: fixed; left: 0; top: 0; width: 100%; background-color: rgba(255,255,255,0.3); }
+#nav h1 {float: left; color: #fff; font-size: 40px; padding: 5px 5px 5px 15px;}
+#nav ul {float: right; padding-right: 10px; }
+#nav ul li {display: inline;}
+#nav ul li a {display: inline-block; padding: 20px 15px; color: #fff; font-weight: bold; text-transform: capitalize; font-family: 'Abel';}
+#nav ul li.active a {color: #000;}
+#nav .ham {display: none; position: absolute; top: 7px; right: 10px; width: 65px; height: 45px; cursor: pointer;}
+
+.ham span {
+  display: block;
+  background: #fff;
+  width: 42px;
+  height: 4px;
+  border-radius: 3px;
+  transition: margin 0.25s 0.25s, transform 0.25s ;
+}
+
+.ham.active span {
+  transition: margin 0.25s, transform 0.25s 0.25s;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.skills{
+    width:100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name{
+    font-size:18px;
+    font-weight: 700;
+    color:white;
+    text-transform: uppercase;
+    margin:20px 0;
+}
+
+.skill-bar{
+    height:14px;
+    background-color: gray;
+    border-radius: 3px;
+}
+
+.skill-per{
+    height:14px;
+    background:red;
+    border-radius: 3px;
+    position: relative;
+    animation: Bars 2.5s 1;
+}
+
+.skill-per::before{
+    content:attr(per);
+    position:absolute;
+    padding:4px 6px;
+    background: white;
+    border-radius: 4px;
+    font-size: 12px;
+    top:-35px;
+    right:0;
+    transform: translateX(50%);
+}
+
+.skill-per::after{
+    content:"";
+    position: absolute;
+    width:10px;
+    height:10px;
+    background: white;
+    top:-20px;
+    right:0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes Bars{
+    from{
+        width:0;
+    }
+    to{
+        width:100%;    
+    }
+}
+
+span {
+
+font: 700 4em/1 "Oswald", sans-serif;
+letter-spacing: 0;
+padding: .25em 0 .325em;
+display: block;
+text-shadow: 0 0 80px rgba(255,255,255,.5);
+}
+
+span{
+background: url(https://c.tenor.com/tldytEXcfSgAAAAd/color-gradient-fdv.gif);
+-webkit-background-clip: text;
+background-clip: text;
+}
+span{
+-webkit-text-fill-color: transparent;
+-webkit-animation: aitf 80s linear infinite;
+}
+
+span{
+-webkit-transform: translate3d(0,0,0);
+-webkit-backface-visibility: hidden;
+}
+
+
+@-webkit-keyframes aitf {
+0% { background-position: 0% 50%; }
+100% { background-position: 100% 50%; }
+}
+    </style>
+
+</head>
+<body>
+    <nav id="nav">
+        <h1><img src="https://postfiles.pstatic.net/MjAyMjA2MDdfOTkg/MDAxNjU0NjAyOTU5ODE1.4wesuQIkRkQsAKZVAdSONbCaph31abd00Xkdwva2cWkg.g8ekx1QsuXOCxshCnDz8v5GgO6fKJds3ID-kD6c7yXMg.PNG.lee222kkk/%EB%A1%9C%EA%B3%A0.png?type=w966" width="55" height="55" class="logo"></h1>
+        <div class="zoom">
+            <span class="close">&times;</span>
+            <img class="zoom_content" id="img1">
+        </div>
+        <ul class="menu">
+          <li class="active"><a href="#about">ABOUT ME</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#project">PROJECT</a></li>
+        </ul>    
+      </nav>
+    <p style="
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        display: inline-block;
+        border: 4px double rgba(255,255,255,.25);
+        border-width: 4px 0;
+        padding: 1.5em 0em;
+        position:relative;
+        top: 18%;
+        left:35%;
+        right:50%;
+        width: 40em;
+        text-align: center;">
+        WELCOME TO MY WORLD!
+        <span>
+          JUNG's WEBSITE
+        </span>
+    </p>
+    <h1 id="about">About me</h1>
+    <hr>
+    <br>
+    <div id="aboutme">
+        <br>
+        <br>
+        <h3><img src="https://postfiles.pstatic.net/MjAyMjA2MDhfMjQz/MDAxNjU0NjcxMTk0OTky.Lexx_1mEmXY4_01_GJ6iCy5aNRQn-UXjkyM3nOkoZK0g.wd4vI7e63Hv8WFSJCPCPAwB2EECkwJHujiSPEaNX9KMg.PNG.lee222kkk/pngwing.com_(1).png?type=w966" width="20" height="20">이름</h3><p>이정은</p>
+        <h3><img src="https://postfiles.pstatic.net/MjAyMjA2MDhfMTY3/MDAxNjU0NjcxMTk1NzEy.urT8U8EndgZkjekX7UhWDM7kopgbLyUQOiXzZZMwwkEg.GDC9Hfkj1WCsaL7ef9GRzrfMvR3SQrrDj_x7Oob1lAog.PNG.lee222kkk/pngwing.com.png?type=w966" width="20" height="20">생년월일</h3><p>2000.05.29</p>
+        <h3><img src="https://postfiles.pstatic.net/MjAyMjA2MDhfMTY4/MDAxNjU0NjcwODk2Mzk2.9feSjgHNVYFcQ5MRyW_EjdL9BI4P4_vqfduDctK5XP0g.tJgvinvISchmU_WZj_PfU6_As0v0UTT0U3xiEc7Dlv0g.PNG.lee222kkk/%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8.png?type=w966" width="20" height="20">연락처</h3><p>010-4096-6373</p>
+        <h3><img src="https://postfiles.pstatic.net/MjAyMjA2MDhfNTQg/MDAxNjU0NjcwODk2NDA2.-NVcLNgje2cCKuYvOSNAku2qIezxHlAP4sAd4QBo0R0g.DaoHU44HG2U9r6oMFrWjev709_Op-a-QqnCEweesOkAg.PNG.lee222kkk/%EC%9D%B8%EC%8A%A4%ED%83%80%EA%B7%B8%EB%9E%A8.png?type=w966" width="20" height="20">SNS</h3><p><a href="https://www.instagram.com/j___e__529/?hl=ko">j___e__529</a></p>
+        <h3><img src="https://postfiles.pstatic.net/MjAyMjA2MDhfMTU1/MDAxNjU0NjcwODk2MzQw.8MoCGpB9DOmxOZoLHlNGaDoxM8MVmeFkmnIOhSm7koYg.i8R7DzDehQDYR3LI3qQo3uLrw0FmBc6DbOaIsW858pUg.PNG.lee222kkk/%EC%9D%B4%EB%A9%94%EC%9D%BC.png?type=w966" width="20" height="20">이메일</h3><p><a href="mailto:lee222kkk@naver.com">lee222kkk@naver.com</a></p>
+    </div>
+    <div id="section">
+        <br>
+        <p style="font-family: 'Noto Serif KR', serif; font-size: 18px;">안녕하세요. 웹 개발자를 희망하고 있는 홍익대학교 소프트웨어융합학과에 재학중인 이정은입니다.</p>
+        <p style="font-family: 'Noto Serif KR', serif; font-size: 18px;">감각적이고 열정적인 마음가짐을 갖고 이 분야에서 다양한 경험을 시도하고 있습니다.</p>
+        <p style="font-family: 'Noto Serif KR', serif; font-size: 18px;">Javascript, Html5, CSS, python, c언어 등의 다룰 수 있는 다양한 기술을 통해</p>
+        <p style="font-family: 'Noto Serif KR', serif; font-size: 18px;">이를 바탕으로 프로덕션 서비스를 개발 및 운영하고 싶습니다.</p>
+        <p style="font-family: 'Noto Serif KR', serif; font-size: 18px;">대학교시절 주로 기숙사에 살았기에 자립심을 키웠고 공동체 생활을 하여 타인을 배려하는 모습 또한 뛰어납니다.</p>
+        <p style="font-family: 'Noto Serif KR', serif; font-size: 18px;">이를 통해 팀 프로젝트를 진행하는 동안 리더역할을 주로 맡아 팀을 잘 이끌었습니다.</p>
+        <p style="font-family: 'Noto Serif KR', serif; font-size: 18px;">그리고 저에겐 잘못된 일이 있을 때 회고하는 습관이 있습니다.</p>
+        <p style="font-family: 'Noto Serif KR', serif; font-size: 18px;">이 습관을 통하여 지나간 실수들은 바로잡고 다시는 하지 않습니다.</p>
+        <p style="font-family: 'Noto Serif KR', serif; font-size: 18px;">또한 빠르게 발전하고있는 IT업계에서 뒤쳐지지 않기위해 항상 새로운 것을 배우고 적응하려 합니다.</p>
+        <p style="font-family: 'Noto Serif KR', serif; font-size: 18px;">이러한 제 장점을 살려서 사람들에게 도움이 될 수 있는 소프트웨어를 개발하고 싶습니다.</p>
+    </div>
+    <div>
+        <h1 id="skill">SKill</h1>
+    <hr>
+    <div class="skills">
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="80%" style="max-width:80%"></div>
+            </div>
+        </div>
+
+        <div class="skill" >
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="60%" style="max-width:60%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">javascript</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="50%" style="max-width:50%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">C-programming</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="70%" style="max-width:70%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="80%" style="max-width:80%"></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h1 id="project">project</h1>
+    <h3 style="font-family: 'Lobster', cursive; font-size:80px; color:white; text-shadow:3px 4px 5px gray; text-align: center;">d-day calculator</h3>
+    <div style="text-align: center;">
+        <img src="https://postfiles.pstatic.net/MjAyMjA2MDhfNDUg/MDAxNjU0NjE2NDExMzE2.1Ancd0AVKgpLSuPeJcYdKAFTNqIwwvWBEpUMMRnJ8-og.TzbyHkOMQSOh3pnoyevEkAVVLHMpnquzBgE28N5HXbwg.PNG.lee222kkk/dday.png?type=w966" width="30%" height="30%" class="image">
+    </div>
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 25px; background-color: rgba(255, 255, 255, 0.253);">남은 기간이나 지난 기간이 얼마나 있는지 계산해주는 디데이 계산기입니다.</p> 
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 25px; background-color: rgba(255, 255, 255, 0.253);">시험기간이나 기념일을 계산할 때 유용하게 사용할 수 있습니다.</p>
+    <hr>
+    <p>사용된 기술 : html5, css, javascript</p>
+    <a href="file:///C:/Users/82104/Downloads/dday_calculator_C089048_%EC%9D%B4%EC%A0%95%EC%9D%80%20(5).html">URL : file:///C:/Users/82104/Downloads/dday_calculator_C089048_%EC%9D%B4%EC%A0%95%EC%9D%80%20(5).html</a>
+    <h3 style="font-family: 'Lobster', cursive; font-size:80px; color:white; text-shadow:3px 4px 5px gray; text-align: center;">dice game</h3>
+    <div style="text-align:center;">
+        <img src="https://postfiles.pstatic.net/MjAyMjA2MDhfMTEy/MDAxNjU0NjcyMDkwNzYz.1i0kPkx33-cLvOuKA_snrC4OByUhjbPa47aIEXfEsQog.vHb9L-DSf-2nkoj4Ne_0uWHq6W3PGa9itT2V6CNV07wg.PNG.lee222kkk/%EC%A3%BC%EC%82%AC%EC%9C%84%EA%B5%B4%EB%A6%AC%EA%B8%B0_%EC%BA%A1%EC%B2%98.png?type=w966" class="image">
+    </div>
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 25px; background-color: rgba(255, 255, 255, 0.253);"><b>심심할 때, 혼자서도 즐길 수 있는 주사위 굴리기게임입니다</b></p>
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 25px; background-color: rgba(255, 255, 255, 0.253);"><b>Player1과 Player2가 나타나 'start the game' 버튼을 누르면 두 플레이어가 주사위를 굴려 승자를 나타냅니다.</b></p>
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 20px; background-color: rgba(255, 255, 255, 0.253);">player1의 주사위와 player2의 주사위의 이미지를 가져와 math.floor()함수를 이용해 랜덤으로 주사위숫자가 바뀌게 해주었습니다.</p>
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 20px; background-color: rgba(255, 255, 255, 0.253);">player1의 주사위를 randomNum1이라하고 player2의 주사위를 randomNum2라 지정하고 player1의 숫자가 player2의 숫자보다 높으면 'Player 1 wins!'</p>
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 20px; background-color: rgba(255, 255, 255, 0.253);">player2의 숫자가 player1의 숫자보다 크면 'Player 2 wins!', 같으면 'Even!'이라고 메시지가 뜨게 설정했습니다.</p>
+    <hr>
+    <p>사용된 기술 : html5, css, javascript</p>
+    <a href="file:///C:/Users/82104/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/helloworld/%EC%A3%BC%EC%82%AC%EC%9C%84%EA%B5%B4%EB%A6%AC%EA%B8%B0.html">URL:file:///C:/Users/82104/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/helloworld/%EC%A3%BC%EC%82%AC%EC%9C%84%EA%B5%B4%EB%A6%AC%EA%B8%B0.html</a>
+    <a style="display:scroll; position:fixed;bottom:10px;right:10px" href="#top" title="맨 위로"><img src="https://postfiles.pstatic.net/MjAyMjA2MDhfNDcg/MDAxNjU0NjkwMzE4MDMz.64tjQigYzqZQGA4r0CCqQOSydaYfNBiyi5reYTQZmlEg.iPb3LwcdPdCAPS2ENJw9nmyS0AnTt-arNG_5NmyUZs4g.PNG.lee222kkk/download-icon-arrow+up+chevronupcircle+circle+circle+icon+top+arrow+up+icon-.png?type=w966" width="50" height="50"></a>
+    <h3 style="font-family: 'Lobster', cursive; font-size:80px; color:white; text-shadow:3px 4px 5px gray; text-align: center;">rock sissor paper</h3>
+    <div style="text-align: center;">
+        <img src="https://postfiles.pstatic.net/MjAyMjA2MDhfMjM2/MDAxNjU0NjE3MzE0MTA0.bt1LQXn9aIRdDrC2IshATWf9zyseeFPjy87Nmz-L2GIg.qPtN9vUawSY8pG1NC1J4cCxtwy7m9O1B_T9k5yaw2pkg.PNG.lee222kkk/%EA%B0%80%EC%9C%84%EB%B0%94%EC%9C%84%EB%B3%B4%EC%BA%A1%EC%B2%98.png?type=w966" class="image">
+    </div>
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 25px; background-color: rgba(255, 255, 255, 0.253);">심심할 때, 혼자서도 즐길 수 있는 가위바위보게임입니다.</p>
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 25px; background-color: rgba(255, 255, 255, 0.253);">Player1과 Player2가 나타나 'start the game' 버튼을 누르면 두 플레이어가 가위바위보하여 승자를 나타냅니다.
+    </p>
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 20px; background-color: rgba(255, 255, 255, 0.253);">player1의 손과 player2의 손의 이미지를 가져와 math.floor()함수를 이용해 랜덤으로 손의모양이 바뀌게 해주었습니다.</p>
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 20px; background-color: rgba(255, 255, 255, 0.253);">player1의 손을 hand1이라하고 player2의 손을 hand2라 지정한 다음, player1가 내민 손모양이 player2의 손모양을 이기면 'Player 1 wins!'</p>
+    <p style="font-family: 'Noto Serif KR', serif; font-size: 20px; background-color: rgba(255, 255, 255, 0.253);">player2의 손모양이 player1의 손모양을 이기면 'Player 2 wins!', 비기면 'Even!'이라고 메시지가 뜨게 설정했습니다.</p>
+    <hr>
+    <p>사용된 기술 : html5, css, javascript</p>
+    <a href="file:///C:/Users/82104/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/helloworld/%EA%B0%80%EC%9C%84%EB%B0%94%EC%9C%84%EB%B3%B4.html">URL : file:///C:/Users/82104/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/helloworld/%EA%B0%80%EC%9C%84%EB%B0%94%EC%9C%84%EB%B3%B4.html</a>
+
+    <footer class="footer">
+        <p>© 2022. Lee Jung Eun. All rights reserved.</p>
+        <p>telephone : 010-4096-6373</p>
+        <p>instagram : j___e__529</p>
+        <p>e-mail : lee222kkk@naver.com</p>
+        
+
+    </footer>
+        
+
+
+
+
+    <!--script-->
+    <script>
+        var bars = document.getElementById("nav-action");
+        var nav = document.getElementById("nav");
+            
+        bars.addEventListener("click", barClicked, false);
+            
+        function barClicked() {
+            bars.classList.toggle('active');
+            nav.classList.toggle('visible');
+        }</script>
+    <script>
+        const zoom = document.querySelector(".zoom");
+        const logo = document.querySelector(".logo");
+        const zoom_img = document.querySelector(".zoom_content");
+        const span = document.querySelector(".close");
+
+        logo.addEventListener('click', ()=>{
+        modalDisplay("block");
+        zoom_img.src = logo.src;
+        });
+        span.addEventListener('click', ()=>{
+        modalDisplay("none");
+        });
+        zoom.addEventListener('click', ()=>{
+        modalDisplay("none");
+        });
+        function modalDisplay(text){
+        zoom.style.display = text;
+        }
+    </script>
+
+</body>
+</html>
